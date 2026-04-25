@@ -4,8 +4,8 @@
 %}
 
 %%
-[01]{8}    { printf("Valid 8-bit binary number\n"); }
-.*         { printf("Invalid input\n"); }
+[01]{8}    { printf("Valid 8-bit binary number : %s \n",yytext); }
+.*         { printf("Invalid input : %s \n" ,yytext); }
 %%
 
 int main(){
